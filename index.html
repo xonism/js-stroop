@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+
+    <link href="./stroop.css" rel="stylesheet"/>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Stroop Effect</title>
+</head>
+
+<body>
+    <div id="start-container" class="container flow-column">
+        <form id="form">
+            <div id="choices-container">
+                <div class="form-container stimulus-number-container">
+                    <label for="stimulus-number">Quantity:</label>
+                    <input type="number" id="stimulus-number" min="1" size="5" value="15">
+                    <img src="./images/question-circle-solid.svg" id="question-icon">
+                    <span id="quantity-information"></span>
+                </div>
+                
+                <div class="form-container">
+                    <input type="radio" name="evaluation" id="word-meaning" value="word-meaning" checked>
+                    <label for="word-meaning">Evaluate Word Meaning</label><br>
+                </div>
+    
+                <div class="form-container">
+                    <input type="radio" name="evaluation" id="word-color" value="word-color">
+                    <label for="word-color">Evaluate Word Color</label><br>
+                </div>
+            </div>
+        </form>
+
+        <button class="button" id="start-button" type="button">Start</button>
+    </div>
+
+    <div id="test-container" class="container flow-column">
+        <div id="word-display-area"></div>
+
+        <div class="button-container">
+            <div class="numpad-word-container">
+                <button class="button no-display" id="red-choice-button" type="button">red</button>
+                <div class="numpad-number">1</div>
+            </div>
+
+            <div class="numpad-word-container">
+                <button class="button no-display" id="green-choice-button" type="button">green</button>
+                <div class="numpad-number">2</div>
+            </div>
+
+            <div class="numpad-word-container">
+                <button class="button no-display" id="blue-choice-button" type="button">blue</button>
+                <div class="numpad-number">3</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="end-container" class="container flow-column">
+        <div id="result-container" class="container flow-row">
+            <div class="time-container">
+                <div class="time-title">Matching Time</div>
+                <div class="time-div" id="matched-time-div"></div>
+            </div>
+    
+            <div class="time-container">
+                <div class="time-title">Mismatched Time</div>
+                <div class="time-div" id="mismatched-time-div"></div>
+            </div>
+    
+            <div class="time-container">
+                <div class="time-title">Incorrect</div>
+                <div class="time-div" id="incorrect-div"></div>
+            </div>
+        </div>
+
+        <button id="download-button" class="button">
+            <a download="info.txt" id="download-link" style="text-decoration: none;">Download Information (.txt)</a>
+        </button>
+    </div>
+
+    <script type="module" src="./js/stroop.js"></script>
+    <script type="module" src="./js/download-file.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+* {
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #171717;
+}
+
+.no-display {
+    display: none;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow-column {
+    flex-flow: column;
+}
+
+.flow-row {
+    flex-flow: row;
+}
+
+.button {
+    border: 0px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 75px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 10px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background-color: #BFBFBF;
+}
+
+#word-display-area {
+    padding: 25px 25px;
+}
+
+.form-container {
+    padding: 10px;
+}
+
+#choices-container {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 27vw;
+    margin: 10px;
+}
+
+input[type=number]{
+    width: 80px;
+} 
+
+#question-icon {
+    width: 20px;
+}
+
+.stimulus-number-container {
+    position: relative;
+    display: inline-block;
+}
+
+#quantity-information {
+    background-color: rgba(255, 140, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    display: none;
+    transform: translateX(71%) translateY(-100%);
+    position: absolute;
+    width: 25vw;
+}
+
+#question-icon #quantity-information {
+    position: absolute;
+}
+
+.numpad-number {
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 25px;
+    text-align: center;
+}
+
+.numpad-word-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+.time-container {
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-title {
+    color: whitesmoke;
+}
+
+.time-div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 25px;
+    padding: 10px;
+    width: 200px;
+}
+
+#download-button {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+}
+
+#download-link {
+    font-size: 20px;
+}
+
+#download-link:visited, #download-link:active {
+    color: black;
+}
