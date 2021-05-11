@@ -15,10 +15,13 @@ export const domElements = {
         starting: document.getElementById('start-container'),
         test: document.getElementById('test-container'),
         result: document.getElementById('result-container'),
+        error: document.getElementById('error-container'),
     },
     
     wordDisplayArea: document.getElementById('word-display-area'),
     incorrectDiv: document.getElementById('incorrect-div'),
+    errorMessage: document.getElementById('error-message'),
+    errorSound: document.getElementById('error-sound'),
 
     form: document.getElementById('form'),
 

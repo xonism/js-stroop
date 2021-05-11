@@ -157,3 +157,28 @@ input[type=number]{
 a {
     padding: 5px;
 }
+
+#error-container {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(220, 20, 60, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+#error-message {
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.no-visibility {
+    visibility: hidden;
+}

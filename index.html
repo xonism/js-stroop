@@ -22,6 +22,13 @@
 </head>
 
 <body>
+    <audio src="./sounds/error-sound.mp3" id="error-sound" class="no-visibility"></audio>
+
+    <div id="error-container" class="no-visibility">
+        <div id="error-message">Quantity must be greater than or equal to 1</div>
+        <img src="./images/exclamation-circle-solid.svg" class="svg-icon">
+    </div>
+
     <div id="start-container" class="container flow-column">
         <form id="form" autocomplete="off">
             <div id="choices-container">
