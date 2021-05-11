@@ -124,7 +124,7 @@ input[type=number]{
 }
 
 .time-div {
-    background-color: whitesmoke;
+    background-color: rgba(255, 140, 0, 0.75);
     border-radius: 10px;
     text-align: center;
     margin: 10px 25px;
@@ -140,8 +140,9 @@ input[type=number]{
 
 #download-link {
     font-size: 20px;
+    text-decoration: none;
 }
 
-#download-link:visited, #download-link:active {
+#download-link:link, #download-link:hover, #download-link:visited, #download-link:active {
     color: black;
 }
