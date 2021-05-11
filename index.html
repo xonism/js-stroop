@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
+    <script defer type="module" src="./js/stroop.js"></script>
+    <script defer type="module" src="./js/download-file.js"></script>
+
     <title>Stroop Effect</title>
 </head>
 
@@ -23,7 +26,7 @@
             <div id="choices-container">
                 <div class="form-container stimulus-number-container">
                     <label for="stimulus-number">Quantity:</label>
-                    <input type="number" id="stimulus-number" min="1" size="5" value="15">
+                    <input type="number" id="stimulus-number" min="1" size="5" value="15" maxlength="4" onkeydown="limit(this);" onkeyup="limit(this);">
                     <img src="./images/question-circle-solid.svg" id="question-icon" class="svg-icon">
                     <span id="quantity-information"></span>
                 </div>
@@ -87,9 +90,5 @@
             <img src="./images/arrow-circle-down-solid.svg" class="svg-icon">
         </button>
     </div>
-
-    <script type="module" src="./js/stroop.js"></script>
-    <script type="module" src="./js/download-file.js"></script>
 </body>
-
 </html>
