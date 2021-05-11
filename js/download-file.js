@@ -14,10 +14,5 @@ export function createFile () {
         return textFile;
     }
 
-    const create = document.getElementById('download-button');
-
-    create.addEventListener( "click", function () {
-        const link = document.getElementById('download-link');
-        link.href = makeTextFile(`Number of words: ${numberOfWords}.\n`);
-    }, false );
+    document.getElementById('download-link').href = makeTextFile(`Number of words: ${numberOfWords}.\n`);
 }
