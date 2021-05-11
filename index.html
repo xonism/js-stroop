@@ -16,6 +16,7 @@
 
     <script defer type="module" src="./js/stroop.js"></script>
     <script defer type="module" src="./js/download-file.js"></script>
+    <script defer type="module" src="./js/number-field-validation.js"></script>
 
     <title>Stroop Effect</title>
 </head>
@@ -26,7 +27,7 @@
             <div id="choices-container">
                 <div class="form-container stimulus-number-container">
                     <label for="stimulus-number">Quantity:</label>
-                    <input type="number" id="stimulus-number" min="1" size="5" value="15" maxlength="4" onkeydown="limit(this);" onkeyup="limit(this);">
+                    <input type="number" id="stimulus-number" min="1" size="5" value="15" maxlength="4">
                     <img src="./images/question-circle-solid.svg" id="question-icon" class="svg-icon">
                     <span id="quantity-information"></span>
                 </div>
