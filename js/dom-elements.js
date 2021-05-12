@@ -4,6 +4,7 @@ export const domElements = {
         redChoice: document.getElementById('red-choice-button'),
         greenChoice: document.getElementById('green-choice-button'),
         blueChoice: document.getElementById('blue-choice-button'),
+        download: document.getElementById('download-button'),
     },
 
     timeDivs: {

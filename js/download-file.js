@@ -18,7 +18,7 @@ export function createFile () {
         return wordMeaningRadioButton.checked ? "Evaluating Word Meaning" : "Evaluating Word Color";
     }
 
-    document.getElementById('download-link').href = makeTextFile(
+    domElements.buttons.download.href = makeTextFile(
         `Number of Words: ${numberOfWords}.\nTask Type: ${getRadioButtonChoice()}.\n`
     );
 }

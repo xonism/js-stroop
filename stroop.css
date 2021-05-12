@@ -138,22 +138,23 @@ input[type=number]{
 
 #download-button {
     padding: 10px;
-    width: 200px;
+    width: 175px;
     height: auto;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-#download-link {
-    font-size: 20px;
+#download-button:hover {
+    background-color: #BFBFBF;
 }
 
-#download-link:link, #download-link:hover, #download-link:visited, #download-link:active {
+#download-button:link, #download-button:hover, #download-button:visited, #download-button:active {
     color: black;
 }
 
-a {
+#download-text {
+    font-size: 20px;
     padding: 5px;
 }
 
