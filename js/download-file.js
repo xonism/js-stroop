@@ -1,4 +1,5 @@
 import { numberOfWords } from './stroop.js';
+import { domElements } from './dom-elements.js';
 
 export function createFile () {
     let textFile = null;
@@ -6,13 +7,18 @@ export function createFile () {
     function makeTextFile (text) {
         const data = new Blob ( [text], { type: 'text/plain' } );
         
-        if ( textFile !== null ) {
-            window.URL.revokeObjectURL(textFile);
-        }
+        if ( textFile !== null ) window.URL.revokeObjectURL(textFile);
 
         textFile = window.URL.createObjectURL(data);
         return textFile;
     }
 
-    document.getElementById('download-link').href = makeTextFile(`Number of words: ${numberOfWords}.\n`);
+    function getRadioButtonChoice () {
+        const { wordMeaningRadioButton } = domElements.formElements;
+        return wordMeaningRadioButton.checked ? "Evaluating Word Meaning" : "Evaluating Word Color";
+    }
+
+    document.getElementById('download-link').href = makeTextFile(
+        `Number of Words: ${numberOfWords}.\nTask Type: ${getRadioButtonChoice()}.\n`
+    );
 }

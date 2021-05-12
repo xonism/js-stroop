@@ -147,7 +147,6 @@ input[type=number]{
 
 #download-link {
     font-size: 20px;
-    text-decoration: none;
 }
 
 #download-link:link, #download-link:hover, #download-link:visited, #download-link:active {

@@ -12,12 +12,14 @@ const errorSound$ = domElements.errorSound;
 const isNumberFieldAboveCharacterLimit = () => numberField$.value.length > MAX_CHARACTERS;
 const isNumberFieldBelowAllowedValue = () => numberField$.value < MIN_VALUE;
 
-const limitFieldLength = (field$) => field$.value = field$.value.substr(0, MAX_CHARACTERS);
+const setFieldValue = (field$) => field$.value = MIN_VALUE;
 const setErrorMessage = (text) => errorMessage$.innerHTML = text;
+
 const addNoVisibilityClassToErrorContainer = () => errorContainer$.classList.add('no-visibility');
 const removeNoVisibilityClassFromErrorContainer = () => errorContainer$.classList.remove('no-visibility');
+
+const limitFieldLength = (field$) => field$.value = field$.value.substr(0, MAX_CHARACTERS);
 const playErrorSound = () => errorSound$.play();
-const setFieldValue = (field$) => field$.value = MIN_VALUE;
 
 const addNumberFieldAllowedValueListener = (chosenEvent) => {
     document.body.addEventListener(chosenEvent, function () {

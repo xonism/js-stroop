@@ -6,7 +6,7 @@ import { createFile } from './download-file.js';
 const timeFunctions = new TimeFunctions();
 
 export let numberOfWords;
-let evaluatingMeaningOrColor;
+export let evaluatingMeaningOrColor;
 
 let matchedTimes = [];
 let mismatchedTimes = [];
