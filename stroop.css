@@ -22,11 +22,8 @@ html, body {
     display: none;
 }
 
-.container {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.no-visibility {
+    visibility: hidden;
 }
 
 .flow-column {
@@ -37,6 +34,70 @@ html, body {
     flex-flow: row;
 }
 
+#word-display-area {
+    padding: 25px 25px;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+}
+
+#choices-container {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    min-width: 325px;
+    margin: 10px;
+}
+
+/* ⭐ NUMPAD ⭐ */
+.numpad-number {
+    font-size: 15px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    width: 25px;
+    text-align: center;
+}
+
+.numpad-word-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* ⭐ STIMULUS NUMBER ⭐ */
+input[type=number] {
+    width: 80px;
+} 
+
+.stimulus-number-container {
+    position: relative;
+    display: inline-block;
+}
+
+#quantity-information {
+    background-color: var(--text-field-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    display: none;
+    transform: translateX(71%) translateY(-100%);
+    position: absolute;
+    width: 25vw;
+}
+
+/* ⭐ BUTTON ⭐ */
 .button {
     border: 0px;
     background-color: var(--light-color);
@@ -57,78 +118,24 @@ button:hover {
     background-color: var(--button-hover-color);
 }
 
-#word-display-area {
-    padding: 25px 25px;
-}
-
-.form-container {
+/* ⭐ DOWNLOAD BUTTON ⭐ */
+#download-button {
     padding: 10px;
-}
-
-#choices-container {
-    background-color: var(--light-color);
-    border-radius: 10px;
-    min-width: 325px;
-    margin: 10px;
-}
-
-input[type=number]{
-    width: 80px;
-} 
-
-.svg-icon {
-    width: 20px;
-    padding: 5px;
-}
-
-.text-with-icon {
-    font-size: 20px;
-    padding: 5px;
-}
-
-#question-icon {
-    width: 20px;
-}
-
-.stimulus-number-container {
-    position: relative;
-    display: inline-block;
-}
-
-#quantity-information {
-    background-color: var(--text-field-color);
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    font-size: 10px;
-    display: none;
-    transform: translateX(71%) translateY(-100%);
-    position: absolute;
-    width: 25vw;
-}
-
-#question-icon #quantity-information {
-    position: absolute;
-}
-
-.numpad-number {
-    font-size: 15px;
-    background-color: var(--light-color);
-    border-radius: 5px;
-    width: 25px;
-    text-align: center;
-}
-
-.numpad-word-container {
+    width: 175px;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.button-container {
-    display: flex;
+#download-button:hover {
+    background-color: #BFBFBF;
 }
 
+#download-button:link, #download-button:hover, #download-button:visited, #download-button:active {
+    color: black;
+}
+
+/* ⭐ RESULT TIME DISPLAY ⭐ */
 .time-container {
     margin: 10px;
     display: flex;
@@ -150,25 +157,22 @@ input[type=number]{
     width: 200px;
 }
 
-#download-button {
-    padding: 10px;
-    width: 175px;
-    height: auto;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+/* ⭐ ICONS ⭐ */
+.svg-icon {
+    width: 20px;
+    padding: 5px;
 }
 
-#download-button:hover {
-    background-color: #BFBFBF;
+.text-with-icon {
+    font-size: 18px;
+    padding: 5px;
 }
 
-#download-button:link, #download-button:hover, #download-button:visited, #download-button:active {
-    color: black;
+#question-icon {
+    width: 20px;
 }
 
-
-
+/* ⭐ ERROR MESSAGE ⭐ */
 #error-container {
     padding: 10px;
     width: 200px;
@@ -184,12 +188,6 @@ input[type=number]{
 }
 
 #error-message {
-    font-size: 20px;
     height: auto;
     text-align: center;
-    padding: 5px;
-}
-
-.no-visibility {
-    visibility: hidden;
 }
