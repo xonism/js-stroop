@@ -1,6 +1,7 @@
 import { domElements } from './dom-elements.js';
 
 const MAX_CHARACTERS = 4;
+const ERROR_MESSAGE_TIME_MS = 3000;
 
 const errorContainer$ = domElements.containers.error;
 const numberField$ = domElements.formElements.stimulusNumberField;
@@ -9,7 +10,8 @@ const errorSound$ = domElements.errorSound;
 
 const limitFieldLength = (field$) => field$.value = field$.value.substr(0, MAX_CHARACTERS);
 const setErrorMessage = (text) => errorMessage$.innerHTML = text;
-const toggleErrorContainerVisibility = () => errorContainer$.classList.toggle('no-visibility');
+const addNoVisibilityClassToErrorContainer = () => errorContainer$.classList.add('no-visibility');
+const removeNoVisibilityClassFromErrorContainer = () => errorContainer$.classList.remove('no-visibility');
 const isNumberFieldAboveCharacterLimit = () => numberField$.value.length > MAX_CHARACTERS;
 const playErrorSound = () => errorSound$.play();
 
@@ -21,9 +23,9 @@ const addNumberFieldCharacterLimitListeners = (chosenEvent) => {
 
         setErrorMessage(`Quantity field can only contain ${MAX_CHARACTERS} characters`);
         playErrorSound();
-        toggleErrorContainerVisibility(errorContainer$);
+        removeNoVisibilityClassFromErrorContainer();
 
-        setTimeout(toggleErrorContainerVisibility, 3000);
+        setTimeout(addNoVisibilityClassToErrorContainer, ERROR_MESSAGE_TIME_MS);
     }, true);
 }
 
