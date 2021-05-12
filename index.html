@@ -25,8 +25,8 @@
     <audio src="./sounds/error-sound.mp3" id="error-sound" class="no-visibility"></audio>
 
     <div id="error-container" class="no-visibility">
-        <div id="error-message">Quantity must be greater than or equal to 1</div>
         <img src="./images/exclamation-circle-solid.svg" class="svg-icon">
+        <div id="error-message" class="text-with-icon">Quantity must be greater than or equal to 1</div>
     </div>
 
     <div id="start-container" class="container flow-column">
@@ -35,7 +35,7 @@
                 <div class="form-container stimulus-number-container">
                     <label for="stimulus-number">Quantity:</label>
                     <input type="number" id="stimulus-number" min="1" size="5" value="15" maxlength="4">
-                    <img src="./images/question-circle-solid.svg" id="question-icon" class="svg-icon">
+                    <img src="./images/question-circle-solid.svg" id="question-icon">
                     <span id="quantity-information"></span>
                 </div>
                 
@@ -93,12 +93,8 @@
             </div>
         </div>
 
-        <!-- <button id="download-button" class="button">
-            <a download="info.txt" id="download-link">Download Information (.txt)</a>
-        </button> -->
-
         <a class="button" id="download-button" download="info.txt">
-            <div id="download-text">Download Information (.txt)</div>
+            <div class="text-with-icon">Download Information (.txt)</div>
             <img src="./images/arrow-circle-down-solid.svg" class="svg-icon">
         </a>
     </div>

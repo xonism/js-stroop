@@ -68,7 +68,7 @@ button:hover {
 #choices-container {
     background-color: var(--light-color);
     border-radius: 10px;
-    width: 27vw;
+    min-width: 325px;
     margin: 10px;
 }
 
@@ -76,11 +76,17 @@ input[type=number]{
     width: 80px;
 } 
 
-#question-icon {
+.svg-icon {
     width: 20px;
+    padding: 5px;
 }
 
-.svg-icon {
+.text-with-icon {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#question-icon {
     width: 20px;
 }
 
@@ -161,10 +167,7 @@ input[type=number]{
     color: black;
 }
 
-#download-text {
-    font-size: 20px;
-    padding: 5px;
-}
+
 
 #error-container {
     padding: 10px;
