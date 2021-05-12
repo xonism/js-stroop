@@ -1,3 +1,11 @@
+:root {
+    --text-field-color: rgba(255, 140, 0);
+    --error-message-color: rgba(220, 20, 60, 0.75);
+    --light-color: whitesmoke;
+    --dark-color: #171717;
+    --button-hover-color: #BFBFBF;
+}
+
 * {
     font-size: 25px;
     font-family: 'Rubik', sans-serif;
@@ -7,7 +15,7 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #171717;
+    background-color: var(--dark-color);
 }
 
 .no-display {
@@ -31,7 +39,7 @@ html, body {
 
 .button {
     border: 0px;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-radius: 10px;
     text-align: center;
     width: 100px;
@@ -46,7 +54,7 @@ button:focus {
 }
 
 button:hover {
-    background-color: #BFBFBF;
+    background-color: var(--button-hover-color);
 }
 
 #word-display-area {
@@ -58,7 +66,7 @@ button:hover {
 }
 
 #choices-container {
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-radius: 10px;
     width: 27vw;
     margin: 10px;
@@ -82,7 +90,7 @@ input[type=number]{
 }
 
 #quantity-information {
-    background-color: rgba(255, 140, 0, 0.75);
+    background-color: var(--text-field-color);
     border-radius: 10px;
     text-align: center;
     padding: 5px;
@@ -99,7 +107,7 @@ input[type=number]{
 
 .numpad-number {
     font-size: 15px;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     border-radius: 5px;
     width: 25px;
     text-align: center;
@@ -124,11 +132,11 @@ input[type=number]{
 }
 
 .time-title {
-    color: whitesmoke;
+    color: var(--light-color);
 }
 
 .time-div {
-    background-color: rgba(255, 140, 0, 0.75);
+    background-color: var(--text-field-color);
     border-radius: 10px;
     text-align: center;
     margin: 10px 25px;
@@ -165,7 +173,7 @@ input[type=number]{
     display: flex;
     flex-flow: column;
     align-items: center;
-    background-color: rgba(220, 20, 60, 0.5);
+    background-color: var(--error-message-color);
     border-radius: 10px;
     position: absolute;
     top: 5%;
