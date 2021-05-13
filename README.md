@@ -1,6 +1,6 @@
 # Stroop Effect Test
 
-🧠 Created using JavaScript, HTML and CSS.
+🧠 Created using HTML, CSS and JavaScript.
 
 ✨ Ability to choose the stimulus amount and evaluation of word meaning or word color.
 
