@@ -15,8 +15,6 @@ let matchingCounter = 0;
 let mismatchedCounter = 0;
 let incorrectCounter = 0;
 
-domElements.formElements.quantityInformation.innerHTML = "Entering the number 15 will display 30 words in total - 15 with<br> matching meaning and color, 15 with mismatched meaning and color";
-
 function addEventListenersToInformationIcon () {
     const { questionIcon, quantityInformation } = domElements.formElements;
     

@@ -88,13 +88,20 @@ input[type=number] {
 #quantity-information {
     background-color: var(--text-field-color);
     border-radius: 10px;
+    display: none;
+    position: absolute;
+    width: 26vw;
+    
+
+    -webkit-transform: translateX(70%) translateY(-102%);
+    -moz-transform: translateX(58%) translateY(-99%);
+}
+
+#quantity-text {
+    font-size: 10px;
     text-align: center;
     padding: 5px;
-    font-size: 10px;
-    display: none;
-    transform: translateX(71%) translateY(-100%);
-    position: absolute;
-    width: 25vw;
+    line-height: 12px;
 }
 
 /* ⭐ BUTTON ⭐ */
