@@ -13,7 +13,7 @@ export let mismatchedTimes = [];
 
 let matchingCounter = 0;
 let mismatchedCounter = 0;
-let incorrectCounter = 0;
+export let incorrectCounter = 0;
 
 function addEventListenersToInformationIcon () {
     const { questionIcon, quantityInformation } = domElements.formElements;

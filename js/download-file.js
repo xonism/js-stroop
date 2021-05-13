@@ -1,4 +1,4 @@
-import { numberOfWords, matchedTimes, mismatchedTimes } from './stroop.js';
+import { numberOfWords, matchedTimes, mismatchedTimes, incorrectCounter } from './stroop.js';
 import { domElements } from './dom-elements.js';
 
 let informationArray = [];
@@ -25,6 +25,6 @@ export function createFile () {
     }
 
     domElements.buttons.download.href = makeTextFile(
-        `Number of Words: ${numberOfWords}.\nTask Type: ${getRadioButtonChoiceText()}.\n  Matched Mismatched\n${informationArray.join('\n')}.`
+        `Number of Words: ${numberOfWords}\nTask Type: ${getRadioButtonChoiceText()}\nIncorrect Answers: ${incorrectCounter}\n  Matched Mismatched\n${informationArray.join('\n')}`
     );
 }
