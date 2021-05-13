@@ -8,8 +8,8 @@ const timeFunctions = new TimeFunctions();
 export let numberOfWords;
 export let evaluatingMeaningOrColor;
 
-let matchedTimes = [];
-let mismatchedTimes = [];
+export let matchedTimes = [];
+export let mismatchedTimes = [];
 
 let matchingCounter = 0;
 let mismatchedCounter = 0;
