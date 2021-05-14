@@ -25,6 +25,6 @@ export function createFile () {
     }
 
     domElements.buttons.download.href = makeTextFile(
-        `Number of Words: ${numberOfWords}\nTask Type: ${getRadioButtonChoiceText()}\nIncorrect Answers: ${incorrectCounter}\n  Matched Mismatched\n${informationArray.join('\n')}`
+        `Number of Words: ${numberOfWords*2}\nTask Type: ${getRadioButtonChoiceText()}\nIncorrect Answers: ${incorrectCounter}\n  Matched Mismatched\n${informationArray.join('\n')}`
     );
 }
