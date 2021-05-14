@@ -91,6 +91,7 @@ input[type=number] {
     display: none;
     position: absolute;
     width: 26vw;
+    transform: translateX(70%) translateY(-102%);
 
     -webkit-transform: translateX(70%) translateY(-102%);
     -moz-transform: translateX(58%) translateY(-99%);
