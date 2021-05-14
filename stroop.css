@@ -197,3 +197,12 @@ button:hover {
     height: auto;
     text-align: center;
 }
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+  
+.fade-out-animation {
+    animation: fade-out 0.5s;
+}
